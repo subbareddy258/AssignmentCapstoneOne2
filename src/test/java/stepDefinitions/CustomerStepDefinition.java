@@ -31,7 +31,7 @@ public class CustomerStepDefinition {
         customerPages = new CustomerPages(driver);
         System.out.println(driver.getTitle());
         report =new ExtentReports("report/report.html",true);
-        test=report.startTest("test cases execution started");
+        test=report.startTest("Customer login page");
                 test.log(LogStatus.INFO,"browser lauched and maximized");
 
       }

@@ -29,12 +29,11 @@ public class ManagerStepDefinition {
 
     @And("I click on Bank manger Login button")
     public void iClickOnBankMangerLoginButton() {
-        test=report.startTest("test cases execution started");
-        test.log(LogStatus.INFO,"browser lauched and maximized");
+        test=report.startTest("Manager Login");
 
         managerLoginPages.mangerLogin();
-        test.log(LogStatus.INFO,"succcessfully logged in");
 
+        test.log(LogStatus.INFO,"Manager succcessfully logged in");
 
     }
 
@@ -45,7 +44,8 @@ public class ManagerStepDefinition {
         driver.get(configReader.getBankingURL());
         managerLoginPages = new ManagerLoginPages(driver);
         System.out.println(driver.getTitle());
-        test.log(LogStatus.INFO,"succcessfully logged in");
+        test.log(LogStatus.INFO,"browser lauched and maximized");
+
 
 
     }

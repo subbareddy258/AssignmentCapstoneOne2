@@ -15,7 +15,7 @@ public class Hooks
     @Before
     public void setup() {
         // Perform setup actions here
-        System.out.println("lauch the browesr");
+        System.out.println("browser lauching");
     }
 
     @After
