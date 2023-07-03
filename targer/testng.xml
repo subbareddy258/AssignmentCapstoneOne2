@@ -2,7 +2,7 @@
 <suite name="BDD Cucumber Tests">
     <test name="Login Tests">
         <classes>
-            <class name="testRunner.TestNgRunner" />
+            <class name="testRunner.TestRunner" />
         </classes>
     </test>
 </suite>
