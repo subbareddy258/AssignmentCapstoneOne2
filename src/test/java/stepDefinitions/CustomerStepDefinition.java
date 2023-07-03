@@ -17,7 +17,6 @@ public class CustomerStepDefinition {
     static WebDriver driver;
     private CustomerPages customerPages;
     private ConfigReader configReader;
-    private static final Logger LOGGER = LogManager.getLogger(CustomerStepDefinition.class);
     static ExtentReports report;
     static ExtentTest test;
 
