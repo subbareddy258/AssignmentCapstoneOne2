@@ -1,6 +1,7 @@
 package stepDefinitions;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
+import org.apache.commons.lang.SystemUtils;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
@@ -19,6 +20,10 @@ public class DriverSetup {
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
         driver.manage().timeouts().pageLoadTimeout(Duration.ofSeconds(10));
         driver.manage().window().maximize();
+        if(!SystemUtils.IS_OS_WINDOWS)
+        {
+            edgeOptions.addArguments("--headless=new");
+        }
         return driver;
     }
 
