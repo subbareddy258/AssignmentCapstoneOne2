@@ -29,7 +29,7 @@ public class ManagerStepDefinition {
 
     @And("I click on Bank manger Login button")
     public void iClickOnBankMangerLoginButton() {
-        test=report.startTest("Manager Login");
+       test=report.startTest("Manager Login");
 
         managerLoginPages.mangerLogin();
 
